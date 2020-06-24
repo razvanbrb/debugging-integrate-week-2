@@ -23,9 +23,21 @@ function evensOrOddsHandler() {
     ...
   */
   let listedNumbers = '';
-  for (_; _; _) {
-
+  if (displayEvens) {
+    for (let i =1;  i <= range; i++) {
+      if (!(i % 2)) {
+        listedNumbers += `${i},`;
+      }
+    }
+  } else {
+    for (let i= 1 ; i <=range; i++){
+      if(i %2 ){
+        listedNumbers += `${i},`;
+      }
+    }
+    
   }
+
   console.log('listedNumbers:', typeof listedNumbers, '\n', listedNumbers);
 
   // alert result for the user
